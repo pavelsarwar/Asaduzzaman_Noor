@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assaduzzaman Noor</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+		<div data-role="page" data-theme="b">
+			<div data-role="header" style="text-align:center;" data-tap-toggle="false"
+			 data-position="fixed">
+				<img style="margin-top:10px; max-width: 100%;" src="image/Asaduzzaman-Noor02.png"/><hr>
+				<img style="margin-top:10px; max-width: 100%;" src="image/Asaduzzaman-Noor.png"/>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="born.html" class="ui-btn ui-mini">Born</a>
+				<a href="Education.html" class="ui-btn ui-mini">Educational Life</a>
+				<a href="actor.html" class="ui-btn ui-mini">Actor</a>
+				<a href="political.html" class="ui-btn ui-mini">Political Life</a>
+				<a href="award.html" class="ui-btn ui-mini">Award</a>
+				<a href="social work.html" class="ui-btn ui-mini">Social Work</a>
+				<a href="parliament.html" class="ui-btn ui-mini">Member of Parliament</a>
+				<a href="foreign.html" class="ui-btn ui-mini">Foreign Tour</a>
+				<a href="photos.html" class="ui-btn ui-mini">Photography</a>
+				
+				<a href="contact.html" class="ui-btn ui-mini">Contact</a>
+				
+			</div>
+			<div data-role="footer" style="text-align:center;" data-tap-toggle="false" data-position="fixed">
+				
+		<img style="margin-top:10px; max-width: 100%;" src="image/css1.png"/>
+	
+			</div>
+		</div>
+	</body>
+</html>
